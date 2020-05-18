@@ -32,3 +32,4 @@ If you aren’t satisfied with the build tool and configuration choices, you can
  - [srip](https://www.flaticon.com/authors/srip)
  - [Smashicons](https://www.flaticon.com/authors/smashicons)
  - [Pixel perfect](https://www.flaticon.com/authors/pixel-perfect)
+ - [Dave Gandy](https://www.flaticon.com/authors/dave-gandy)
