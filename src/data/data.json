@@ -1,8 +1,14 @@
 {
-  "contactDetails": { 
-    "github": "https://github.com/readmey",
-    "linkedin": "https://www.linkedin.com/in/my-trang-hong-325138a4/"
-  },
+  "contactDetails": [
+    {
+      "name": "github",
+      "URL": "https://github.com/readmey"
+    },
+    {
+      "name": "linkedin",
+      "URL": "https://www.linkedin.com/in/my-trang-hong-325138a4/"
+    }
+  ],
   "education": {
     "year": "04-2017",
     "grade": 1.5,
@@ -59,18 +65,18 @@
   "languages": [
     {
       "language": "German",
-      "level": "native language",
-      "levelNumber": 5
+      "text": "native language",
+      "level": 5
     },
     {
       "language": "English",
-      "level": "fluent",
-      "levelNumber": 4
+      "text": "fluent",
+      "level": 4
     },
     {
       "language": "Vietnamese",
-      "level": "intermediate",
-      "levelNumber": 3
+      "text": "intermediate",
+      "level": 3
     }
   ],
   "skillsMatrix": [
