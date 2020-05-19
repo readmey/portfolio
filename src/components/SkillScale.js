@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledProgressBar = styled.div`
-  position: relative;
   height: 10px;
   width: 100%;
   border-radius: 5px;
@@ -10,7 +9,6 @@ const StyledProgressBar = styled.div`
 `;
 
 const StyledBubble = styled.div`
-  position: relative;
   display: inline-block;
   height: 15px;
   width: 15px;
@@ -26,7 +24,7 @@ const StyledFiller = styled.div`
   width: calc(20% * ${(props) => props.level});
 `;
 
-const StyledLabel = styled.h5`
+const StyledTitle = styled.h5`
   display: inline-block;
   margin: 0.5rem 2rem 0.5rem 0;
   min-width: 150px;
@@ -36,38 +34,38 @@ const StyledLabel = styled.h5`
 const SkillScale = (props) => {
   const { type, skills } = props;
 
-  const renderScaleType = (type) =>
-    type === "bar" ? renderScaleBar : renderScaleBubbles;
-
-  const renderScaleBar = skills.map((item) => {
-    const { language, level } = item;
+  const renderScaleBar = (level) => {
     return (
-      <div className={`skill-${type}`}>
-        <h5>{language}</h5>
-        <StyledProgressBar>
-          <StyledFiller level={level} />
-        </StyledProgressBar>
-      </div>
+      <StyledProgressBar>
+        <StyledFiller level={level} />
+      </StyledProgressBar>
     );
-  });
+  };
 
-  const renderScaleBubbles = skills.map((item) => {
-    const { skill, level } = item;
+  const renderScaleBubbles = (level) => {
     let bubbles = [];
 
     for (let i = 0; i < 5; i++) {
       bubbles.push(<StyledBubble filled={level > i ? true : false} />);
     }
 
-    return (
-      <div className={`skill-${type}`}>
-        <StyledLabel>{skill}</StyledLabel>
-        {bubbles}
-      </div>
-    );
-  });
+    return bubbles;
+  };
 
-  return <div>{renderScaleType(type)}</div>;
+  return (
+    <div className={`skill-${type}`}>
+      {skills.map((item) => {
+        const { language, skill, level } = item;
+
+        return (
+          <React.Fragment>
+            <StyledTitle>{skill || language}</StyledTitle>
+            {type === "bar" ? renderScaleBar(level) : renderScaleBubbles(level)}
+          </React.Fragment>
+        );
+      })}
+    </div>
+  );
 };
 
 export default SkillScale;
