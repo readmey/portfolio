@@ -15,7 +15,7 @@ const StyledBubble = styled.div`
   border-radius: 25px;
   margin-right: 0.25rem;
   border: 2px solid #417505;
-  background-color: ${(props) => (props.filled ? "#79a546" : "white")};
+  background-color: ${(props) => (props.filled ? "#417505" : "white")};
 `;
 
 const StyledFiller = styled.div`
@@ -46,7 +46,7 @@ const SkillScale = (props) => {
     let bubbles = [];
 
     for (let i = 0; i < 5; i++) {
-      bubbles.push(<StyledBubble filled={level > i ? true : false} />);
+      bubbles.push(<StyledBubble key={i} filled={level > i ? true : false} />);
     }
 
     return bubbles;
@@ -54,11 +54,11 @@ const SkillScale = (props) => {
 
   return (
     <div className={`skill-${type}`}>
-      {skills.map((item) => {
+      {skills.map((item, index) => {
         const { language, skill, level } = item;
 
         return (
-          <React.Fragment>
+          <React.Fragment key={index}>
             <StyledTitle>{skill || language}</StyledTitle>
             {type === "bar" ? renderScaleBar(level) : renderScaleBubbles(level)}
           </React.Fragment>

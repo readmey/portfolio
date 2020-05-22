@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledContact = styled.div`
-  float: right;
+  text-align: right;
 `;
 
 const StyledIcon = styled.a`
