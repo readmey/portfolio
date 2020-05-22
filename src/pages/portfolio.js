@@ -2,6 +2,10 @@ import React from "react";
 import styled from "styled-components";
 
 import SkillScale from "../components/SkillScale";
+import CustomTitle from "../components/CustomTitle";
+
+import LanguageIcon from "../assets/icons/language-icon.svg";
+import SkillsIcon from "../assets/icons/skills-icon.svg";
 
 const GridFlex = styled.div`
   display: flex;
@@ -20,9 +24,11 @@ const Portfolio = (props) => {
     <div className="portfolio">
       <GridFlex>
         <ColumnFlex>
+          <CustomTitle title="Languages" icon={LanguageIcon} />
           <SkillScale type="bar" skills={data.languages} />
         </ColumnFlex>
         <ColumnFlex>
+          <CustomTitle title="Skills" icon={SkillsIcon} />
           <SkillScale type="bubbles" skills={data.skillsMatrix} />
         </ColumnFlex>
       </GridFlex>
