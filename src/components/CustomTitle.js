@@ -4,8 +4,7 @@ import styled from "styled-components";
 const StyledTitle = styled.h2`
   font-family: "DINCondensed";
   font-weight: bold;
-  font-size: 50px;
-  max-width: 200px;
+  font-size: 45px;
   background-color: white;
   text-transform: uppercase;
   padding: 1rem;
@@ -21,6 +20,7 @@ const StyledIcon = styled.img`
   width: 40px;
   display: inline-block;
   margin-right: 0.25rem;
+  vertical-align: sub;
 `;
 
 const CustomTitle = (props) => {
