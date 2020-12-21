@@ -1,11 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+import theme from "../styles/theme";
 
 const StyledProgressBar = styled.div`
   height: 10px;
   width: 100%;
   border-radius: 5px;
-  border: 2px solid #417505;
+  border: 2px solid ${theme.colors.primary};
 `;
 
 const StyledBubble = styled.div`
@@ -14,12 +15,13 @@ const StyledBubble = styled.div`
   width: 15px;
   border-radius: 25px;
   margin-right: 0.25rem;
-  border: 2px solid #417505;
-  background-color: ${(props) => (props.filled ? "#417505" : "white")};
+  float: right;
+  border: 2px solid ${theme.colors.primary};
+  background-color: ${(props) => (props.filled ? theme.colors.primary : "white")};
 `;
 
 const StyledFiller = styled.div`
-  background-color: #79a546;
+  background-color: ${theme.colors.secondary};
   height: 10px;
   width: calc(20% * ${(props) => props.level});
 `;
@@ -58,10 +60,10 @@ const SkillScale = (props) => {
         const { language, skill, level } = item;
 
         return (
-          <React.Fragment key={index}>
+          <div className={`skill-${skill || language}`} key={index}>
             <StyledTitle>{skill || language}</StyledTitle>
             {type === "bar" ? renderScaleBar(level) : renderScaleBubbles(level)}
-          </React.Fragment>
+          </div>
         );
       })}
     </div>
