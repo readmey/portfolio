@@ -1,8 +1,17 @@
 {
   "projects": [
     {
-      "startDate": "09-2019",
+      "startDate": "06-2020",
       "endDate": null,
+      "title": "R&D",
+      "customer": "tesa SE",
+      "role": "IT-Consultant / Software Engineer Frontend / professional UI/UX",
+      "description": "Implementing multiple digitalisation projects to replace old systems, having a valid data collection and user-friendly applications for R&D",
+      "technologies": "React, Typescript, JavaScript, CSS3, material-ui, material-table, handsontable, kubernetes, docker"
+    },
+    {
+      "startDate": "09-2019",
+      "endDate": "05-2020",
       "title": "Lead Generation Online",
       "customer": "Kühne + Nagel (AG & Co.) KG",
       "role": "IT-Consultant / Software Engineer Frontend",

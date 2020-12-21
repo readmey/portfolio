@@ -9,13 +9,13 @@
       "URL": "https://www.linkedin.com/in/my-trang-hong-325138a4/"
     }
   ],
-  "education": {
+  "education": [{
     "year": "04-2017",
     "grade": 1.5,
     "university": "University of Applied Sciences - HTW Berlin",
     "studies": "Internationale Medieninformatik",
     "graduation": "Bachelor of Science"
-  }, 
+  }], 
   "certification": [
     {
       "year": "04-2020",
@@ -26,8 +26,8 @@
     },
     {
       "year": "11-2018",
-      "title": "UXQB® Certified Professional for Usability and User Experience Foundation Level",
-      "organization": "UXQB – International Usability and User Experience Qualification Board e.V.",
+      "title": "Certified Professional for Usability and UX - Foundation Level",
+      "organization": "UXQB® – International Usability and UX Qualification Board e.V.",
       "licenseId": "18-CPUXFL-145613-27",
       "licenseURL": null
     }
