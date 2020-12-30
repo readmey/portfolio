@@ -28,7 +28,7 @@ const StyledFiller = styled.div`
 
 const StyledTitle = styled.h5`
   display: inline-block;
-  margin: 0.5rem 2rem 0.5rem 0;
+  margin: 0.5rem 0.5rem 0.5rem 0;
   min-width: 150px;
   vertical-align: super;
 `;

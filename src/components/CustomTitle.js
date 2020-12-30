@@ -4,15 +4,20 @@ import styled from "styled-components";
 const StyledTitle = styled.h2`
   font-family: "DINCondensed";
   font-weight: bold;
-  font-size: 45px;
+  font-size: 40px;
   background-color: white;
   text-transform: uppercase;
-  padding: 1rem;
+  padding: 0;
   margin: 0;
   position: ${(props) => (props.icon ? "relative" : "absolute")};
   top: 0;
   left: 0.5rem;
   display: inline-block;
+  vertical-align: bottom;
+`;
+
+const StyledWrapper = styled.div`
+  margin-bottom: 1rem;
 `;
 
 const StyledIcon = styled.img`
@@ -30,10 +35,10 @@ const CustomTitle = (props) => {
   };
 
   return (
-    <React.Fragment>
+    <StyledWrapper>
       {icon ? renderIcon() : null}
       <StyledTitle icon={icon}>{title}</StyledTitle>
-    </React.Fragment>
+    </StyledWrapper>
   );
 };
 

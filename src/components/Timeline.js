@@ -6,6 +6,7 @@ const GridFlex = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  padding-bottom: 1rem;
   @media (min-width: ${theme.breakpoints.sm}) {
     flex-wrap: nowrap;
   }
@@ -13,6 +14,10 @@ const GridFlex = styled.div`
 
 const StyledWrapper = styled.div`
   margin-left: 1rem;
+  max-width: calc(100% - 80px);
+  @media (max-width: ${theme.breakpoints.xs}) {
+    max-width: 235px;
+  }
 `;
 
 const StyledBubble = styled.div`
@@ -26,7 +31,7 @@ const StyledBubble = styled.div`
 `;
 
 const StyledLine = styled.div`
-  height: 120px;
+  height: 100%;
   margin-top: 1rem;
   margin-left: 0.5rem;
   width: 2px;
