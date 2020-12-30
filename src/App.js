@@ -18,6 +18,20 @@ const AppWrapper = styled.div`
   border: ${(props) => props.theme.borders.borderPrimary};
 `;
 
+const CustomName = styled.h2`
+  font-family: "DINCondensed";
+  font-weight: bold;
+  font-size: 40px;
+  background-color: white;
+  text-transform: uppercase;
+  padding: 1rem;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0.5rem;
+  display: inline-block;
+`;
+
 function App() {
   return (
     <ThemeProvider theme={theme}>
@@ -26,7 +40,7 @@ function App() {
         <StyledHeader>
           <ContactDetails contact={data.contactDetails} />
         </StyledHeader>
-        <CustomTitle title="My Trang Hong" />
+        <CustomName>My Trang Hong</CustomName>
         <Portfolio data={data} />
       </AppWrapper>
     </ThemeProvider>

@@ -25,6 +25,7 @@ const GridFlex = styled.div`
 
 const ColumnFlex = styled.div`
   width: 100%;
+  margin-bottom: 2rem;
   @media (min-width: ${theme.breakpoints.sm}) {
     width: 45%;
   }
