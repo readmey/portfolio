@@ -6,7 +6,6 @@ import GlobalStyles from "./styles/globalStyles";
 import data from "./data/data.json";
 
 import Portfolio from "./pages/portfolio";
-import CustomTitle from "./components/CustomTitle";
 import ContactDetails from "./components/ContactDetails";
 
 const StyledHeader = styled.header`
