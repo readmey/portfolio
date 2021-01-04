@@ -1,6 +1,6 @@
 
 ### Portfolio
-A portfolio built with react showing my current CV deployed with github-pages: https://readmey.github.io/portfolio/
+My portfolio built with react showing my current CV deployed with github-pages: https://readmey.github.io/portfolio/
 
 ### Credits
 **Icons from [Flaticon](www.flaticon.com) made by:**
