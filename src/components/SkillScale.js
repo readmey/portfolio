@@ -18,6 +18,9 @@ const StyledBubble = styled.div`
   float: right;
   border: 2px solid ${theme.colors.primary};
   background-color: ${(props) => (props.filled ? theme.colors.primary : "white")};
+  @media (max-width: ${theme.breakpoints.xs}) {
+    float: none;
+  }
 `;
 
 const StyledFiller = styled.div`
@@ -31,6 +34,9 @@ const StyledTitle = styled.h5`
   margin: 0.5rem 0.5rem 0.5rem 0;
   min-width: 150px;
   vertical-align: super;
+  @media (max-width: ${theme.breakpoints.xs}) {
+    width: 100%;
+  }
 `;
 
 const SkillScale = (props) => {

@@ -4,7 +4,7 @@ import styled from "styled-components";
 const StyledTitle = styled.h2`
   font-family: "DINCondensed";
   font-weight: bold;
-  font-size: 40px;
+  font-size: 34px;
   background-color: white;
   text-transform: uppercase;
   padding: 0;
@@ -18,6 +18,7 @@ const StyledTitle = styled.h2`
 
 const StyledWrapper = styled.div`
   margin-bottom: 1rem;
+  display: flex;
 `;
 
 const StyledIcon = styled.img`
