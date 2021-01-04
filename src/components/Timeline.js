@@ -16,7 +16,7 @@ const StyledWrapper = styled.div`
   margin-left: 1rem;
   max-width: calc(100% - 80px);
   @media (max-width: ${theme.breakpoints.xs}) {
-    max-width: 235px;
+    max-width: calc(100% - 40px);
   }
 `;
 
@@ -55,7 +55,7 @@ const Timeline = (props) => {
   return (
     <>
       { list.map((item, index) => (
-        <GridFlex key={item}>
+        <GridFlex key={index}>
           <div>
             <StyledBubble />
             {(list.length === 1 || index < list.length - 1)  && <StyledLine />}
