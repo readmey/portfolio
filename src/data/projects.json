@@ -54,8 +54,7 @@
       "customer": "vhw - Bundesverband für Wohnen und Stadtentwicklung e.V.",
       "role": "IT-Consultant / Software Engineer Frontend",
       "description": "Implementing a dynamic prototype with a given dataset and filter options",
-      "technologies": "React, JavaScript (ES6), Lodash, CSS3, Bootstrap, SCSS",
-      "projectSelection": true
+      "technologies": "React, JavaScript (ES6), Lodash, CSS3, Bootstrap, SCSS"
     },
     {
       "startDate": "01-2019",
@@ -64,7 +63,8 @@
       "customer": "qwp GmbH in cooperation with Volkswagen",
       "role": "Frontend Developer",
       "description": "Implementing a PoC responsive application with CMS Contentful for Volkswagen",
-      "technologies": "JS (ES6), ReactJS, CMS Contentful, SCSS, CSS3, HTML5"
+      "technologies": "JS (ES6), ReactJS, CMS Contentful, SCSS, CSS3, HTML5",
+      "projectSelection": true
     },
     {
       "startDate": "12-2018",

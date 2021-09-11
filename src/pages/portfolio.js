@@ -74,14 +74,13 @@ const Portfolio = (props) => {
           <ColumnFlex>
             <CustomTitle title="Selection of Projects" icon={ProjectsIcon} />
             <Timeline list={
-              projectData.projects.map(item => {   
-                if(item.projectSelection) return {
+              projectData.projects.filter(item =>  item.projectSelection).map(item => ({
                   date: `${item.title} - ${item.customer}`,
                   title: item.role,
                   description: item.description,
-                  subDescription: item.technologies,
-                }
-              })} />
+                  subDescription: item.technologies
+                }))
+            } />
           </ColumnFlex>
         </GridFlex>
         <GridFlex>
