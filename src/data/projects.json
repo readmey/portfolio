@@ -7,7 +7,8 @@
       "customer": "tesa SE",
       "role": "IT-Consultant / Software Engineer Frontend / professional UI/UX",
       "description": "Implementing multiple digitalisation projects to replace old systems, having a valid data collection and user-friendly applications for R&D",
-      "technologies": "React, Typescript, JavaScript, CSS3, material-ui, material-table, handsontable, kubernetes, docker"
+      "technologies": "React, Typescript, JavaScript, CSS3, material-ui, material-table, handsontable, kubernetes, docker",
+      "projectSelection": true
     },
     {
       "startDate": "09-2019",
@@ -16,7 +17,8 @@
       "customer": "Kühne + Nagel (AG & Co.) KG",
       "role": "IT-Consultant / Software Engineer Frontend",
       "description": "Supporting the customer during the rebranding of their web presentation. Implementing the Frontend on given styleguides and design within the CMS Liferay DXP 7.2",
-      "technologies": "Liferay, JavaScript, CSS3, Bootstrap, SCSS, Figma"
+      "technologies": "Liferay, JavaScript, CSS3, Bootstrap, SCSS, Figma",
+      "projectSelection": true
     },
     {
       "startDate": "09-2019",
@@ -52,7 +54,8 @@
       "customer": "vhw - Bundesverband für Wohnen und Stadtentwicklung e.V.",
       "role": "IT-Consultant / Software Engineer Frontend",
       "description": "Implementing a dynamic prototype with a given dataset and filter options",
-      "technologies": "React, JavaScript (ES6), Lodash, CSS3, Bootstrap, SCSS"
+      "technologies": "React, JavaScript (ES6), Lodash, CSS3, Bootstrap, SCSS",
+      "projectSelection": true
     },
     {
       "startDate": "01-2019",
@@ -115,7 +118,8 @@
       "customer": "Universal Music Group",
       "role": "Frontend Developer",
       "description": "Responsive VueJS Webapplication for content hosting and sharing",
-      "technologies": "JS, VueJS (vuex), GraphQL, Chai & Sinon, Avoriaz Testing, Bulma, SASS, CSS3, HTMl5, Responsive Design"
+      "technologies": "JS, VueJS (vuex), GraphQL, Chai & Sinon, Avoriaz Testing, Bulma, SASS, CSS3, HTMl5, Responsive Design",
+      "projectSelection": true
     },
     {
       "startDate": "07-2017",

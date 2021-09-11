@@ -10,7 +10,7 @@ import WorkIcon from "../assets/icons/work-experience-icon.svg";
 import ProjectsIcon from "../assets/icons/projects-icon.svg";
 import SkillsIcon from "../assets/icons/skills-icon.svg";
 import Timeline from "../components/Timeline";
-import projects from "../data/projects.json";
+import projectData from "../data/projects.json";
 
 const GridFlex = styled.div`
   display: flex;
@@ -74,12 +74,14 @@ const Portfolio = (props) => {
           <ColumnFlex>
             <CustomTitle title="Selection of Projects" icon={ProjectsIcon} />
             <Timeline list={
-              projects.projects.slice(0, 5).map(item => ({
-              date: `${item.title} - ${item.customer}`,
-              title: item.role,
-              description: item.description,
-              subDescription: item.technologies,
-            }))} />
+              projectData.projects.map(item => {   
+                if(item.projectSelection) return {
+                  date: `${item.title} - ${item.customer}`,
+                  title: item.role,
+                  description: item.description,
+                  subDescription: item.technologies,
+                }
+              })} />
           </ColumnFlex>
         </GridFlex>
         <GridFlex>
