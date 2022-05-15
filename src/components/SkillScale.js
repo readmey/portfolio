@@ -15,7 +15,6 @@ const StyledBubble = styled.div`
   width: 15px;
   border-radius: 25px;
   margin-right: 0.25rem;
-  float: right;
   border: 2px solid ${theme.colors.primary};
   background-color: ${(props) => (props.filled ? theme.colors.primary : "white")};
   @media (max-width: ${theme.breakpoints.xs}) {
@@ -29,11 +28,23 @@ const StyledFiller = styled.div`
   width: calc(20% * ${(props) => props.level});
 `;
 
-const StyledTitle = styled.h5`
+const StyledFlexWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+const StyledSkills = styled.div`
+  width: 100%;
+  text-align: right;
+`;
+
+const StyledTitle = styled.h4`
   display: inline-block;
   margin: 0.5rem 0.5rem 0.5rem 0;
   min-width: 150px;
   vertical-align: super;
+  font-weight: 400;
   @media (max-width: ${theme.breakpoints.xs}) {
     width: 100%;
   }
@@ -66,10 +77,12 @@ const SkillScale = (props) => {
         const { language, skill, level } = item;
 
         return (
-          <div className={`skill-${skill || language}`} key={index}>
+          <StyledFlexWrapper className={`skill-${skill || language}`} key={index}>
             <StyledTitle>{skill || language}</StyledTitle>
+            <StyledSkills className={`skill-${skill || language}-${type}`}>
             {type === "bar" ? renderScaleBar(level) : renderScaleBubbles(level)}
-          </div>
+            </StyledSkills>
+          </StyledFlexWrapper>
         );
       })}
     </div>

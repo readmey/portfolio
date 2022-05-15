@@ -18,6 +18,13 @@
   }], 
   "certification": [
     {
+      "year": "12-2021",
+      "title": "CPRE - Certified Professional Requirements Engineer",
+      "organization": "Certible",
+      "licenseId": "d9d3c2c1070daac33c579420f073bba1",
+      "licenseURL": "https://www.certible.com/de/verify/?id=d9d3c2c1070daac33c579420f073bba1"
+    },
+    {
       "year": "04-2020",
       "title": "PSPO - Professional Scrum Product Owner",
       "organization": "Scrum.org",
@@ -37,14 +44,14 @@
       "startDate": "05-2019",
       "endDate": "now",
       "company": "PRODYNA SE",
-      "position": "IT Consultant / Software Engineer Frontend",
-      "address": "Litfaß-Platz 2, 10178 Berlin"
+      "position": "IT Consultant / Frontend Software Engineer",
+      "address": "Jean-Monnet-Straße 2, 10557 Berlin"
     },
     {
       "startDate": "07-2017",
       "endDate": "04-2019",
       "company": "Kreuzwerker GmbH",
-      "position": "Frontend Developer / IT Consultant",
+      "position": "IT Consultant / Frontend Software Engineer",
       "address": "Ritterstr. 12-14, 10969 Berlin"
     },
     {
@@ -81,19 +88,15 @@
   ],
   "skillsMatrix": [
     {
-      "skill": "Javascript",
+      "skill": "Javascript, Typescript",
       "level": 4
     },
     {
-      "skill": "React",
+      "skill": "React, Vue",
       "level": 4
     },
     {
-      "skill": "Vue",
-      "level": 4
-    },
-    {
-      "skill": "CSS (Sass, Less, Stylus)",
+      "skill": "CSS (emotion, styled-components, preprocessors)",
       "level": 5
     },
     {
@@ -105,23 +108,23 @@
       "level": 4
     },
     {
-      "skill": "CMS - Contentful, Liferay",
-      "level": 3
-    },
-    {
-      "skill": "Agile Development - Scrum",
+      "skill": "Scrum Master",
       "level": 4
     },
     {
-      "skill": "Git",
+      "skill": "Git, Versioning",
       "level": 4
     },
     {
-      "skill": "Usability - UCD",
+      "skill": "Project Coordination, Stakeholder Management, RE",
       "level": 4
     },
     {
-      "skill": "Sketch",
+      "skill": "UI/UX, Key User Interviews, Usability Testing",
+      "level": 4
+    },
+    {
+      "skill": "Figma, Wireframing, Prototyping",
       "level": 3
     }
   ]
